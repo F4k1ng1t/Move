@@ -2,15 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Windows;
 
 public class FirstPersonCameraBehavior : MonoBehaviour
 {
 
     private Rigidbody rb;
-
-    private float vInput;
-    private float hInput;
 
     public float fov = 60f;
     public bool invertCamera = false;
@@ -81,6 +77,6 @@ public class FirstPersonCameraBehavior : MonoBehaviour
     
     void FixedUpdate()
     {
-        rb.MovePosition(this.transform.position + this.transform.forward * vInput * Time.fixedDeltaTime);
+        
     }
 }
